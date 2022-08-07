@@ -12,11 +12,17 @@ public class App {
         boolean esMayor=true;
 
         System.out.println("Su nombre es :"+nombre+" su edad de "+edad+" su peso de "+peso+" y es mayor?" +esMayor);
-        System.out.println("***** FUNCIONES *****");
+        System.out.println("***** FUNCIONES ****");
         System.out.println("El precio de con IVA es de "+masIva(400));
+
+        String[] variable = new String[] {"Gustavo", "Fernet", "Tengo", "2022"};
+        for (int i =0; i < variable.length; i++){
+            System.out.println(variable[i]);
+        }
     }
 
     static double masIva (double iva){
         return iva+iva*0.21;       
     }
+
 }
